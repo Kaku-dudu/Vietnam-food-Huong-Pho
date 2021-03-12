@@ -1,0 +1,447 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+=======================================
+  Reset CSS
+=======================================
+*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, main, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+  display: block;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  color: #333;
+  line-height: 1.5;
+  font-size: 14px;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+img {
+  border: 0;
+}
+ul, ol {
+  list-style-type: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img, input, select, textarea {
+  vertical-align: middle;
+}
+a {
+  color: #003300;
+  transition: 0.5s;
+}
+a:hover {
+  color: #d53e04;
+}
+a img:hover {
+  opacity: 0.7;
+}
+/* ---------------Top page start-------------------------------------------
+----------------------------------------------------------------- */
+header, #top_main_contents,#footer_area {
+  width: 960px;
+  margin: 0 auto;
+}
+/*------header area--- */
+#top_page #header_area {
+  height: 400px;
+  background-image: url(../images/Top_header_ph1.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  
+  /*max-width:100%;*/
+}
+#top_page header {
+  height: 400px;
+}
+header img {
+  width: 80px;
+  height: 80px;
+  margin-top: 5px;
+  margin-left: 870px;
+}
+#top_page header p {
+  height: 200px;
+  font-size: 20px;
+  margin-top: 60px;
+  margin-left: 610px;
+  background: url(../images/Top_header_fukidashi.png);
+  background-repeat: no-repeat;
+  background-position-y: 50px;
+  color: #fff;
+  text-decoration-color: 
+}
+/*------ nav area----------*/
+.nav_area {
+  height: 70px;
+  width: 960px;
+}
+.logo img {
+  height: 70px;
+  width: 170px;
+}
+.nav_area {
+  display: flex;
+  justify-content: space-between;
+}
+.nav span {
+  font-size: 130%;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+.nav ul li {
+  display: block;
+  width: 195px;
+  text-align: center;
+  height: 70px;
+  /* background: grey;*/
+}
+.nav ul a {
+  display: block;
+  height: 50px;
+  text-decoration: none;
+  padding: 10px;
+}
+.nav ul a:hover {
+  background: #96b77b;
+  color: white;
+  opacity: 0.7;
+}
+
+ .nav li.home  {
+  background:#96b77b;
+  color: white;
+}
+ .nav li.home a  {
+  color: white;
+}
+
+
+
+
+
+
+
+/*----main area------*/
+
+h2 + p {
+  margin-top: 20px;
+}
+#top_main_contents h3 {
+  text-align: center;
+}
+#top_main_contents section, footer {
+  padding: 0 20px; 
+}
+.content2, .content3, footer {
+  display: flex;
+  justify-content: space-around;
+}
+#top_main_contents h2,
+#menu_main_contents h2,
+#concept_main_contents .content2 h2,
+#concept_main_contents .content3 h2,
+#concept_main_contents .content4 h2
+{
+  border-left: 8px solid green;
+  padding-left: 10px;
+}
+
+
+
+/*---slide show----*/
+.slideshow {
+  width: 850px;
+  height: 305px;
+  background: #fff;
+  margin: 50px auto;
+}
+.autoplay img{
+  margin-right: 20px;
+}
+
+/*---content----*/
+#top_page #top_main_contents section{
+  margin-top: 50px;
+}
+#top_page #top_main_contents section:nth-child(3){
+    margin-top: 100px;
+}
+.content1 span {
+  font-style: italic;
+  color: #336600;
+}
+.content1, .content2, .content3,.content4 p {
+  line-height: 2;
+}
+.content2 .left, .content3 .right {
+  border-top: 2px solid green;
+  padding-top: 50px;
+}
+/*-----footer area------*/
+footer {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 3px solid green;
+  position: relative;
+}
+footer dt {
+  font-weight: bold;
+}
+footer .left dl {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: cloumn;
+}
+footer .left dl dt {
+  width: 15%;
+  text-align: left;
+}
+footer .left dl dd {
+  width: 85%;
+}
+footer .banner p {
+  margin-bottom: 10px;
+}
+/*icon 場所取り*/
+.sns a {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 50px;
+  text-align: center;
+}
+.sns {
+  width: 300px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+/*-----------icon code start-----
+------------------------------------------------------------------*/
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts.sns/icomoon.eot?z7c70w');
+  src: url('fonts.sns/icomoon.eot?z7c70w#iefix') 
+  format('embedded-opentype'), url('fonts.sns/icomoon.ttf?z7c70w')
+   format('truetype'), url('fonts.sns/icomoon.woff?z7c70w') 
+   format('woff'), url('fonts.sns/icomoon.svg?z7c70w#icomoon') 
+   format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change font.sns */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+/*-------------icon code end------------------------------------
+---------------------------------------------------------------------*/
+.to_top p {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  background: #196816;
+  border-radius: 50px;
+  bottom: 30px;
+  left: 50%;
+  margin-left: 500px;
+}
+.to_top  a {
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 20px 10px;
+  text-decoration: none;
+}
+/* ---------------Top page  end-------------------------------------------
+----------------------------------------------------------------- */
+
+/* ---------------Menu page start-------------------------------------------
+----------------------------------------------------------------- */
+header, #menu_main_contents,#footer_area {
+  width: 960px;
+  margin: 0 auto;
+}
+/*------header area--- */
+#menu_page #header_area,
+#concept_page #header_area,
+#access_page #header_area {
+  height: 160px;
+  background-image:url(../images/Menu_header_ph_01.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+}
+#menu_page, header {
+  height: 160px;
+}
+
+#menu_page header p ,
+#concept_page header p ,
+#access_page header p
+{
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 500px;
+ 
+}
+.food1_ph,
+.food2_ph,
+.food3_ph,
+.drink1_ph{
+  display: flex;
+  justify-content: space-around;
+}
+.food1_ph img,
+.food2_ph img,
+.food3_ph img,
+.drink1_ph img{
+  width: 260px;
+  height: 200px;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+figure{
+  text-align: center;
+  margin-top: 20px;
+}
+figcaption{
+  margin-top: 20px;
+}
+#menu_main_contents section{
+  margin-bottom: 50px;
+}
+#menu_main_contents section:nth-child(2){
+  margin-top: 50px;
+}
+/* ---------------Menu page end-------------------------------------------
+----------------------------------------------------------------- */
+/* ---------------Concept page start-------------------------------------------
+----------------------------------------------------------------- */
+.content4 .left {
+  border-top: 2px solid green;
+  padding-top: 50px;
+}
+#concept_page .content1, .content4{
+  display: flex;
+  justify-content: space-around;
+}
+header, #concept_main_contents,#footer_area {
+  width: 960px;
+  margin: 0 auto;
+}
+/*------header area--- */
+
+#concept_page, header {
+  height: 160px;
+}
+#concept_main_contents .content1 .right p{
+  vertical-align: bottom;
+}
+#concept_main_contents .content1 .left{
+  padding-left: 100px;
+}
+.blank h2{
+  padding-top: 70px;
+  text-align: center;
+  background-image: url(../images/concept_kazari.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+#concept_page #concept_main_contents section{
+  margin-top: 50px;
+}
+#concept_page #concept_main_contents section:nth-child(4){
+    margin-top: 100px;
+}
+#concept_main_contents .content1 h2{
+  text-align: center;
+}
+#concept_main_contents .content1 p{
+  margin-bottom: 15px;
+}
+#concept_main_contents .content1{
+ align-items: flex-end;
+}
+#concept_main_contents section{
+  padding: 0 20px;
+}
+/* ---------------Concept page end-------------------------------------------
+----------------------------------------------------------------- */
+
+/* ---------------access page start-------------------------------------------
+----------------------------------------------------------------- */
+#access_main_contents{
+  width: 960px;
+  margin: 0 auto;
+}
+#access_main_contents .map_area{
+  margin-bottom: 30px;
+}
+#access_main_contents .map_area h2{
+  margin-bottom: 20px;
+  margin-top:30px;
+}
+#access_main_contents .map_area h2,
+#access_main_contents .map_area .map
+{
+
+  text-align: center;
+}
+#access_main_contents .map_area,
+#access_main_contents .access_detail{
+  padding: 0 20px;
+}
+.map iframe{
+  width: 100%;
+}
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+table th,
+table td
+{
+  padding: 20px 20px;
+  
+}
+table caption{
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 5px;
+  caption-side: bottom;
+  
+}
+/* ---------------Caccess page end-------------------------------------------
+----------------------------------------------------------------- */
